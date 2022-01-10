@@ -1,0 +1,21 @@
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+}
+
+.link {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.current{
+  color: #2196f3;
+}
+

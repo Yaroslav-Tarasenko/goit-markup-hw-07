@@ -1,0 +1,122 @@
+.head-information{
+  border-bottom: 1px solid #ECECEC;
+}
+
+.head-container{
+  display: flex;
+  align-items: center;
+}
+
+.logo-link__header {
+  display: block;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.logo-link__second-part {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.head-navigation{
+  margin-right: auto;
+}
+
+.head-list {
+  display: flex;
+}
+
+.head-list__link {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.06;
+  letter-spacing: 0.02em;
+  color: var(--header-menu-color);
+  color: inherit;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  position: relative;
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+    &.current::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    position: absolute;
+    border-radius: 2px;
+    left: 0;
+    bottom: -1px;
+    }
+}
+
+.head-list__item {
+  margin-right: 50px;
+    &:last-child{
+    margin-right: 0px;
+    }
+}
+
+.head-right {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-contacts-color);
+}
+
+.head-right__item{
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+    &:last-child{
+    margin-right: 0px;
+    }
+}
+
+.head-right__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--header-contacts-color);
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+    &:last-child{
+    margin-right: 0;
+    }
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+    &:hover .head-right-link-icon,
+    &:focus .head-right-link-icon {
+    color: var(--accent-color);
+    }
+}
+
+.head-right__social-icon{
+  margin-right: 10px;
+  vertical-align: middle;
+  fill: currentColor;
+}
